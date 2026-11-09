@@ -127,9 +127,9 @@ header h1,header p{{text-shadow:0 1px 6px rgba(0,0,0,.55)}}
 .stemma{{width:96px;height:96px;border-radius:50%;background:var(--bianco);padding:10px;object-fit:contain;display:block;margin:0 auto 14px}}
 h1{{font-size:1.5rem;line-height:1.2;margin:0 0 6px}}
 header p{{margin:0;opacity:.95}}
-.sociali{{display:flex;gap:10px;justify-content:center;margin-top:14px;flex-wrap:wrap}}
+.sociali{{display:flex;gap:12px;justify-content:center;margin-top:14px;flex-wrap:wrap}}
 a{{color:inherit}}
-.social{{padding:8px 16px;border:2px solid var(--bianco);border-radius:999px;text-decoration:none;font-weight:600;font-size:.95rem}}
+.social{{display:inline-flex;align-items:center;justify-content:center;min-width:140px;min-height:48px;padding:10px 24px;background:var(--bianco);color:var(--rosso);border-radius:999px;text-decoration:none;font-weight:700;font-size:1.05rem;box-shadow:0 2px 10px rgba(0,0,0,.35)}}
 .evidenza{{display:block;background:var(--bianco);color:var(--testo);border-radius:16px;overflow:hidden;text-decoration:none}}
 .evidenza img{{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}}
 .evidenza .testo{{display:flex;flex-direction:column;gap:4px;padding:14px 16px 16px}}
