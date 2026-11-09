@@ -121,7 +121,7 @@ a{{color:inherit}}
 .evidenza{{display:block;background:var(--bianco);color:var(--testo);border-radius:16px;overflow:hidden;text-decoration:none}}
 .evidenza img{{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}}
 .evidenza .testo{{display:flex;flex-direction:column;gap:4px;padding:14px 16px 16px}}
-.evidenza strong{{font-size:1.15rem;color:var(--rosso)}}
+.evidenza strong{{font-size:1.15rem;color:var(--rosso);text-wrap:balance}}
 .credito{{font-size:.75rem;color:var(--grigio)}}
 .voce{{display:block;background:var(--bianco);color:var(--rosso);text-align:center;text-decoration:none;font-weight:700;padding:16px;border-radius:999px;min-height:52px}}
 a:hover,a:focus-visible{{filter:brightness(.94)}}
