@@ -1,0 +1,27 @@
+{
+  "titolo": "Comune di Castelluccio Superiore",
+  "sottotitolo": "Avvisi, servizi e canali ufficiali del Comune.",
+  "stemma": "assets/stemma.png",
+  "goatcounter": "",
+  "social": [
+    {"nome": "Facebook", "url": "https://www.facebook.com/comunecastellucciosuperiore"},
+    {"nome": "Instagram", "url": "https://www.instagram.com/comunecastellucciosuperiore/"}
+  ],
+  "in_evidenza": {
+    "id": "libri-di-testo",
+    "titolo": "Contributo libri di testo 2026-27",
+    "descrizione": "Domanda al Comune entro le 14:00 di mercoledì 2 dicembre.",
+    "url": "https://www.comune.castellucciosuperiore.pz.it/page/contributi-per-i-libri-di-testo-per-l-anno-scolast",
+    "immagine": "assets/libri-di-testo.jpg",
+    "alt": "Una pila di libri di testo su una scrivania.",
+    "credito": "Foto: freestocks.org, CC0, via Wikimedia Commons",
+    "scadenza": "2026-12-02"
+  },
+  "voci": [
+    {"id": "sito", "titolo": "Sito ufficiale", "url": "https://www.comune.castellucciosuperiore.pz.it/"},
+    {"id": "avvisi-bandi", "titolo": "Avvisi e bandi", "url": "https://DA-COMPLETARE", "nascosta": true},
+    {"id": "albo-pretorio", "titolo": "Albo pretorio", "url": "https://DA-COMPLETARE", "nascosta": true},
+    {"id": "amministrazione-trasparente", "titolo": "Amministrazione trasparente", "url": "https://DA-COMPLETARE", "nascosta": true},
+    {"id": "whatsapp", "titolo": "Canale WhatsApp", "url": "https://DA-COMPLETARE", "nascosta": true}
+  ]
+}
