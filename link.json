@@ -4,8 +4,14 @@
   "stemma": "assets/stemma.png",
   "goatcounter": "",
   "social": [
-    {"nome": "Facebook", "url": "https://www.facebook.com/comunecastellucciosuperiore"},
-    {"nome": "Instagram", "url": "https://www.instagram.com/comunecastellucciosuperiore/"}
+    {
+      "nome": "Facebook",
+      "url": "https://www.facebook.com/comunecastellucciosuperiore"
+    },
+    {
+      "nome": "Instagram",
+      "url": "https://www.instagram.com/comunecastellucciosuperiore/"
+    }
   ],
   "in_evidenza": {
     "id": "libri-di-testo",
@@ -18,10 +24,31 @@
     "scadenza": "2026-12-02"
   },
   "voci": [
-    {"id": "sito", "titolo": "Sito ufficiale", "url": "https://www.comune.castellucciosuperiore.pz.it/"},
-    {"id": "avvisi-bandi", "titolo": "Avvisi e bandi", "url": "https://DA-COMPLETARE", "nascosta": true},
-    {"id": "albo-pretorio", "titolo": "Albo pretorio", "url": "https://DA-COMPLETARE", "nascosta": true},
-    {"id": "amministrazione-trasparente", "titolo": "Amministrazione trasparente", "url": "https://DA-COMPLETARE", "nascosta": true},
-    {"id": "whatsapp", "titolo": "Canale WhatsApp", "url": "https://DA-COMPLETARE", "nascosta": true}
+    {
+      "id": "sito",
+      "titolo": "Sito ufficiale",
+      "url": "https://www.comune.castellucciosuperiore.pz.it/"
+    },
+    {
+      "id": "avvisi-bandi",
+      "titolo": "Avvisi e bandi",
+      "url": "https://DA-COMPLETARE",
+      "nascosta": true
+    },
+    {
+      "id": "albo-pretorio",
+      "titolo": "Albo pretorio",
+      "url": "https://www.halleyweb.com/castellucciosu/mc/mc_p_ricerca.php?x=&"
+    },
+    {
+      "id": "amministrazione-trasparente",
+      "titolo": "Amministrazione trasparente",
+      "url": "https://www.comune.castellucciosuperiore.pz.it/ccastellucciosup/page/1/985/1/2023/Amministrazione_trasparente"
+    },
+    {
+      "id": "whatsapp",
+      "titolo": "Canale WhatsApp",
+      "url": "https://whatsapp.com/channel/0029Vae0Tq44yltH8DBEXB2k"
+    }
   ]
 }
