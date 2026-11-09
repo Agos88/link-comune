@@ -4,7 +4,8 @@
   "stemma": "assets/stemma.png",
   "goatcounter": "",
   "sfondo": {
-    "immagine": "assets/sfondo-paese.jpg"
+    "immagine": "assets/sfondo-paese.jpg",
+    "credito": "Foto: Demia Gioia"
   },
   "social": [
     {

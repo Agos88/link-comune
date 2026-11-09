@@ -119,10 +119,11 @@ PAGINA = """<!doctype html>
 body{{margin:0;position:relative;overflow-x:hidden;background:var(--rosso);color:var(--bianco);font:18px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;min-height:100vh}}
 .sfondo{{position:absolute;top:0;left:0;right:0;height:440px;z-index:0;overflow:hidden}}
 .sfondo img{{width:100%;height:100%;object-fit:cover;object-position:68% 40%;display:block}}
-.sfondo::after{{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(192,0,12,.45) 0%,rgba(192,0,12,.7) 60%,var(--rosso) 100%)}}
+.sfondo::after{{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(192,0,12,.08) 0%,rgba(192,0,12,.3) 55%,rgba(192,0,12,.8) 85%,var(--rosso) 100%)}}
 .credito-sfondo{{font-size:.75rem;opacity:.85;text-align:center;margin-top:8px}}
 main{{position:relative;z-index:1;max-width:560px;margin:0 auto;padding:32px 16px 40px;display:flex;flex-direction:column;gap:14px}}
 header{{text-align:center;margin-bottom:8px}}
+header h1,header p{{text-shadow:0 1px 6px rgba(0,0,0,.55)}}
 .stemma{{width:96px;height:96px;border-radius:50%;background:var(--bianco);padding:10px;object-fit:contain;display:block;margin:0 auto 14px}}
 h1{{font-size:1.5rem;line-height:1.2;margin:0 0 6px}}
 header p{{margin:0;opacity:.95}}
