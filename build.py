@@ -91,12 +91,19 @@ def costruisci(cfg, giorno):
     pulsanti = "".join(
         f'<a class="voce" href="{e(v["url"])}" rel="noopener"{attributi_clic(v)}>{e(v["titolo"])}</a>'
         for v in visibili)
+    sf = cfg.get("sfondo")
+    sfondo = piede = ""
+    if sf:
+        sfondo = (f'<div class="sfondo" aria-hidden="true"><img src="{e(sf["immagine"])}" alt="" '
+                  'width="2000" height="667"></div>')
+        if sf.get("credito"):
+            piede = f'<footer class="credito-sfondo">{e(sf["credito"])}</footer>'
     gc = cfg.get("goatcounter", "").strip()
     script = (f'<script data-goatcounter="https://{e(gc)}.goatcounter.com/count" async '
               'src="https://gc.zgo.at/count.js"></script>') if gc else ""
     return PAGINA.format(titolo=e(cfg["titolo"]), sottotitolo=e(cfg.get("sottotitolo", "")),
                          stemma=e(cfg["stemma"]), social=social, evidenza=blocco_ev,
-                         voci=pulsanti, script=script)
+                         voci=pulsanti, script=script, sfondo=sfondo, piede=piede)
 
 
 PAGINA = """<!doctype html>
@@ -109,8 +116,12 @@ PAGINA = """<!doctype html>
 <style>
 :root{{--rosso:#C0000C;--rosso-scuro:#8f0009;--bianco:#fff;--testo:#262626;--grigio:#595959}}
 *{{box-sizing:border-box}}
-body{{margin:0;background:var(--rosso);color:var(--bianco);font:18px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;min-height:100vh}}
-main{{max-width:560px;margin:0 auto;padding:32px 16px 40px;display:flex;flex-direction:column;gap:14px}}
+body{{margin:0;position:relative;overflow-x:hidden;background:var(--rosso);color:var(--bianco);font:18px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;min-height:100vh}}
+.sfondo{{position:absolute;top:0;left:0;right:0;height:440px;z-index:0;overflow:hidden}}
+.sfondo img{{width:100%;height:100%;object-fit:cover;object-position:68% 40%;display:block}}
+.sfondo::after{{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(192,0,12,.45) 0%,rgba(192,0,12,.7) 60%,var(--rosso) 100%)}}
+.credito-sfondo{{font-size:.75rem;opacity:.85;text-align:center;margin-top:8px}}
+main{{position:relative;z-index:1;max-width:560px;margin:0 auto;padding:32px 16px 40px;display:flex;flex-direction:column;gap:14px}}
 header{{text-align:center;margin-bottom:8px}}
 .stemma{{width:96px;height:96px;border-radius:50%;background:var(--bianco);padding:10px;object-fit:contain;display:block;margin:0 auto 14px}}
 h1{{font-size:1.5rem;line-height:1.2;margin:0 0 6px}}
@@ -129,6 +140,7 @@ a:focus-visible{{outline:3px solid #ffd54a;outline-offset:3px}}
 </style>
 </head>
 <body>
+{sfondo}
 <main>
 <header>
 <img class="stemma" src="{stemma}" alt="Stemma del Comune di Castelluccio Superiore">
@@ -138,6 +150,7 @@ a:focus-visible{{outline:3px solid #ffd54a;outline-offset:3px}}
 </header>
 {evidenza}
 <nav style="display:flex;flex-direction:column;gap:14px" aria-label="Collegamenti">{voci}</nav>
+{piede}
 </main>
 {script}
 </body>

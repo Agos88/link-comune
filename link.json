@@ -3,6 +3,9 @@
   "sottotitolo": "Avvisi, servizi e canali ufficiali del Comune.",
   "stemma": "assets/stemma.png",
   "goatcounter": "",
+  "sfondo": {
+    "immagine": "assets/sfondo-paese.jpg"
+  },
   "social": [
     {
       "nome": "Facebook",
